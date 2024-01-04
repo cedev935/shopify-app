@@ -2,7 +2,7 @@
 
 name = "seo-app"
 client_id = "26941ddb76eaac773f4795acb2feb832"
-application_url = "https://example.com"
+application_url = "https://scientific-eligible-transportation-end.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -10,7 +10,11 @@ embedded = true
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://scientific-eligible-transportation-end.trycloudflare.com/auth/callback",
+  "https://scientific-eligible-transportation-end.trycloudflare.com/auth/shopify/callback",
+  "https://scientific-eligible-transportation-end.trycloudflare.com/api/auth/callback"
+]
 
 [webhooks]
 api_version = "2024-01"
@@ -19,4 +23,5 @@ api_version = "2024-01"
 embedded = false
 
 [build]
+automatically_update_urls_on_dev = true
 dev_store_url = "seo-app-testing.myshopify.com"

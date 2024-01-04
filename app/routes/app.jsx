@@ -20,9 +20,18 @@ export default function App() {
     <AppProvider isEmbeddedApp apiKey={apiKey}>
       <ui-nav-menu>
         <Link to="/app" rel="home">
-          Home
+          Dashboard
         </Link>
         <Link to="/app/additional">Additional page</Link>
+        <Link to="/app/seo_issues">Seo Issues</Link>
+        <Link to="/app/meta_tag">Meta Tag</Link>
+        <Link to="/app/auto_pilot">Auto Pilot</Link>
+        <Link to="/app/google_snippets">Google Snippets</Link>
+        <Link to="/app/broken_links">Broken Links</Link>
+        <Link to="/app/image_optimizer">Image Optimizer</Link>
+        <Link to="/app/url_optimization">URL Optimization</Link>
+        <Link to="/app/sitemap">Sitemap</Link>
+        <Link to="/app/bulk_editor">Bulk Editor</Link>
       </ui-nav-menu>
       <Outlet />
     </AppProvider>

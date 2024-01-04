@@ -84,7 +84,7 @@ export default function Index() {
 
   return (
     <Page>
-      <ui-title-bar title="Remix app template">
+      <ui-title-bar title="Dashboard">
         <button variant="primary" onClick={generateProduct}>
           Generate a product
         </button>
